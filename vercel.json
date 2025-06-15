@@ -17,10 +17,6 @@
   ],
   "env": {
     "SESSION_SECRET": "default_session_secret_for_deployment"
-  },
-  "functions": {
-    "wsgi.py": {
-      "maxDuration": 30
-    }
+  }
   }
 }
