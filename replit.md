@@ -78,7 +78,24 @@ The application is configured for production deployment with:
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+- June 15, 2025: Added voice customization options with speed controls (normal/slow)
+- June 15, 2025: Added voice style preferences (default/male-oriented/female-oriented)
+- June 15, 2025: Created Vercel deployment configuration with vercel.json and wsgi.py
+- June 15, 2025: Added comprehensive documentation (README.md, DEPLOYMENT.md)
+- June 15, 2025: Enhanced UI with additional voice settings controls
+
+## Deployment Configuration
+
+The application is now configured for Vercel deployment with:
+- **Entry Point**: wsgi.py for serverless function compatibility
+- **Configuration**: vercel.json with Python runtime and 30-second timeout
+- **Documentation**: Complete deployment guide with CLI and dashboard options
+- **Environment**: Session secrets configured for production deployment
+
 ## Changelog
 
 Changelog:
 - June 15, 2025. Initial setup
+- June 15, 2025. Enhanced with voice options and Vercel deployment ready
