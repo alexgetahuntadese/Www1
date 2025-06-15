@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "wsgi.py"
+    }
+  ],
+  "env": {
+    "SESSION_SECRET": "default_session_secret_for_deployment"
+  },
+  "functions": {
+    "wsgi.py": {
+      "maxDuration": 30
+    }
+  }
+}

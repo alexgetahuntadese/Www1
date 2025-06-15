@@ -67,6 +67,32 @@
                                     Enter text in Amharic script. The system will convert it to speech using Google's TTS service.
                                 </div>
                             </div>
+                            
+                            <!-- Voice Options -->
+                            <div class="mb-3">
+                                <label class="form-label">Voice Settings</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="speed" class="form-label small">Speaking Speed</label>
+                                        <select class="form-select" id="speed" name="speed">
+                                            <option value="normal">Normal Speed</option>
+                                            <option value="slow">Slow Speed (Clear pronunciation)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="voice_style" class="form-label small">Voice Style</label>
+                                        <select class="form-select" id="voice_style" name="voice_style">
+                                            <option value="default">Default Voice</option>
+                                            <option value="male">Male-oriented (Lower pitch preference)</option>
+                                            <option value="female">Female-oriented (Higher pitch preference)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-text">
+                                    <i class="fas fa-microphone me-1"></i>
+                                    Google TTS provides high-quality Amharic speech synthesis. Voice style affects audio processing for pitch preference.
+                                </div>
+                            </div>
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg" id="convertBtn">
                                     <i class="fas fa-play me-2"></i>

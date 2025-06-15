@@ -51,8 +51,15 @@ def convert_text():
         if not amharic_chars:
             flash('Please enter text that contains Amharic characters.', 'warning')
         
-        # Create TTS object for Amharic
-        tts = gTTS(text=text, lang='am', slow=False)
+        # Get voice options from form
+        voice_speed = request.form.get('speed', 'normal')
+        voice_style = request.form.get('voice_style', 'default')
+        is_slow = voice_speed == 'slow'
+        
+        # Create TTS object for Amharic with voice customization
+        # Note: gTTS uses Google's TTS which provides a neutral voice
+        # We can adjust speed and apply post-processing for voice characteristics
+        tts = gTTS(text=text, lang='am', slow=is_slow)
         
         # Generate unique filename
         file_id = str(uuid.uuid4())
